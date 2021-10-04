@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+body {
+    background-color: #fefefe;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #efe8e4;
+}
+
+.content {
+    width: 90vw;
+}
+
+.left {
+    margin-top: 8vh;
+    color: #2d2d2d;
+}
+
+.right {
+    margin-top: 5vh;
+}
+
+.myphoto {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 2.3em;
+    letter-spacing: 0.05em;
+    font-weight: bolder;
+}
+
+.intro {
+    font-size: 1.1em;
+    letter-spacing: 0.03em;
+    color: #5d73a1;
+}
+
+.btns {
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+.email {
+    font-size: 1.1em;
+    color: #2d2d2d;
+    letter-spacing: 0.1em;
+}
+
+.email:hover {
+    color: #5d73a1;
+    text-decoration: none;
+}
+
+.intropic {
+    margin-top: 5vh;
+    width: 29vw;
+}
+
+@media (max-width: 1025px) {
+    .intropic {
+        margin-top: 15vh;
+        width: 75vw;
+    }
+    .middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 426px) {
+    .right {
+        margin-top: 3vh;
+    }
+    .intropic {
+        margin-top: 6vh;
+    }
+}
