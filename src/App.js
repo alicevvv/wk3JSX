@@ -1,5 +1,6 @@
 import './css/bootstrap.min.css';
 import './css/main.css';
+import Skill from './component/skill.js';
 
 function App() {
   return (
@@ -19,16 +20,12 @@ function App() {
                         <button className="btns p-1 pr-3 pl-3 m-1 rounded email" onclick="location.href='mailto:alicev871203@gmail.com'">聯絡我</button>
                     </div>
                 </div>
-                <div className="middle">
-                    <img className="intropic" src="./image/intro_1.png" width="100%" />
-                    <img className="intropic" src="./image/intro_2.png" width="100%" />
-                    <img className="intropic" src="./image/intro_3.png" width="100%" />
-                </div>
+                <Skill />
 
             </div>
 
         </div>
-    </div>
+      </div>
     </div>
   );
 }
