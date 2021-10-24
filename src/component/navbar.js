@@ -10,19 +10,6 @@ export default function Navbar() {
             <NavLink to="/" className="nav-item btns" activeClassName="nav-item--active">
                 Works
             </NavLink>
-        {/* <Row justify="space-between">
-            <Col span={4}>
-                <Link to="/">
-                    <img src="./image/alice2.jpg" className="myphoto" />
-                </Link>
-            </Col>
-            <Col span={4}>
-                <button></button>
-            </Col>
-            <Col span={4}>
-                <button></button>
-            </Col>
-        </Row> */}
         </div>
     );
 }

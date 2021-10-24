@@ -10,7 +10,7 @@ export default function APPheader() {
                     <img src="./image/alice2.jpg" className="myphoto" />
                 </Link>
             </Col>
-            <Col span={6}>
+            <Col span={4}>
                 <Navbar/>
             </Col>
         </Row>

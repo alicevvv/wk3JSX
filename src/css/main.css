@@ -64,6 +64,10 @@ body {
     text-decoration: none !important;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .card-title {
     font-size: 1.2em;
     letter-spacing: 0.2em;
