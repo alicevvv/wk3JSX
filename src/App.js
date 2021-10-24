@@ -1,32 +1,18 @@
+import './App.css';
 import './css/bootstrap.min.css';
 import './css/main.css';
-import Skill from './component/skill.js';
+import home from './page/Home.js'
+import {BrowserRouter,Route,Switch,Link} from "react-router-dom";
+import Experience from './page/Experience';
 
 function App() {
   return (
-    <div>
-      <div className="d-flex justify-content-center">
-        <div className="content">
-            <div className="all d-flex flex-column align-items-center">
-                <div className="left d-flex align-items-center flex-column">
-                    <img src="./image/alice2.jpg" className="myphoto" />
-                    <div className="title">Hi, I'm Alice Lai！</div>
-                    <div className="intro">I want to be a front-end Engineer！<br /></div>
-                </div>
-                <div className="right d-flex align-items-center flex-column">
-                    <div className="row justify-content-center">
-                        <button className="btns p-1 pr-3 pl-3 m-1 rounded email" onclick="location.href='./html/experience.html'">經歷</button>
-                        <button className="btns p-1 pr-3 pl-3 m-1 rounded email" onclick="location.href='./html/work.html '">作品</button>
-                        <button className="btns p-1 pr-3 pl-3 m-1 rounded email" onclick="location.href='mailto:alicev871203@gmail.com'">聯絡我</button>
-                    </div>
-                </div>
-                <Skill />
-
-            </div>
-
-        </div>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={home}/>
+        <Route path="/experience" component={Experience} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
